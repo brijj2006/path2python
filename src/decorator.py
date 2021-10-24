@@ -18,3 +18,10 @@ def func_needs_decorator(welcome):
 
 
 func_needs_decorator('welcome to python !')
+
+"""
+### OUTPUT ###
+some extra code, before the original function
+I need decorator - welcome to python !
+some extra code, after the original function
+"""

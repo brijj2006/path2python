@@ -21,3 +21,11 @@ class Dog(Animal):
 dog_obj = Dog()
 dog_obj.who_am_i()
 dog_obj.eat()
+
+"""
+### OUTPUT ###
+animal created
+dog created
+i am dog
+i am eating
+"""

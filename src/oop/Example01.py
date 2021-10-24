@@ -19,3 +19,8 @@ class Animal:
 
 animal_obj = Animal(species='tiger', legs=4, spots=True)
 animal_obj.animal_details()
+
+"""
+### OUTPUT ###
+animal tiger has 4 legs with True spots on the body
+"""

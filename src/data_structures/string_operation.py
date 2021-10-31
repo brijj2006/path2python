@@ -153,3 +153,49 @@ def count_substring(string, sub_string):
 
 
 count_substring('ABCDCDC', 'CDC')
+
+'''You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+
+For Example:
+
+Www.HackerRank.com → wWW.hACKERrANK.COM
+Pythonist 2 → pYTHONIST 2 '''
+
+
+def swap_case(string):
+    swap_string = ''
+    for char in string:
+        if char.islower():
+            swap_string = swap_string + char.upper()
+        elif char.isupper():
+            swap_string = swap_string + char.lower()
+        else:
+            swap_string = swap_string + char
+
+    print(swap_string)
+
+
+swap_case('Www.HackerRank.com')
+
+'''ensure that the first and last names of people begin with a capital letter in their passports. 
+For example, alison heck should be capitalised correctly as Alison Heck.
+'''
+
+
+def solve(s):
+    new_string = ''
+    s = s.split(" ")
+    j = 0
+    for char in s:
+        print(char)
+        for i in char:
+            if j == 0:
+                i = i.upper()
+                j = j + 1
+            new_string = new_string + i
+        j = 0
+        new_string = new_string + ' '
+    return new_string
+
+
+solve('brijendra singh')
